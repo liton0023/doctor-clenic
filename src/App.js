@@ -11,8 +11,10 @@ import Footer from './Shared/Footer/Footer';
 import ContactUs from './Pages/ContactUs/ContactUs'
 import NotFound from './Pages/NotFound/NotFound'
 import SetServices from './Pages/SetServices/SetServices';
-import GetService from './Pages/GetService/GetService/GetService';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
+import ResetPasswordEmail from './Pages/Login/ResetPasswordEmail/ResetPasswordEmail';
+import EmailVerefication from './Pages/Register/EmailVerefiction/EmailVerefication';
+import CheackOut from './Pages/CheackOut/CheackOut';
 
 function App() {
   return (
@@ -26,7 +28,9 @@ function App() {
         <Route path='/setservices' element={<SetServices></SetServices>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/contact' element={<ContactUs></ContactUs>}></Route>
-        <Route path='/getserevice' element={<RequireAuth><GetService></GetService></RequireAuth>}></Route>
+        <Route path='/cheackout' element={<RequireAuth><CheackOut></CheackOut></RequireAuth>}></Route>
+        <Route path='/resetpasswordemail' element={<ResetPasswordEmail></ResetPasswordEmail>}></Route>
+        <Route path='/verifayemail' element={<EmailVerefication></EmailVerefication>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signUp' element={<SignUp></SignUp>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>

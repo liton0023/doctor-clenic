@@ -76,10 +76,10 @@ const SignUp = () => {
                     <input onBlur={handleConformPassBlur} className="block border border-yellow-600 px-10 py-3" type="password" name="" id="" placeholder="Enter Password" required />
                     <div className="block text-red-700">{error}</div>
                     <input className="bg-blue-300 text-base rounded px-1 py-1 mr-2 mt-2" type="submit" value="Register" />
+                    <Link to="/verifayemail"> <button className='bg-blue-300 text-base rounded px-1 py-1 mr-2 mt-2"'>Verify Email</button> </Link>
 
                 </form>
                 <p className="text-2xl mt-10">Already have an account? <Link to="/login"> <span className="text-red-700 font-bold">Log In</span> </Link></p>
-
                 <button onClick={handleGoogleSignIn} className="bg-yellow-700 text-white rounded-lg  px-5 py-3 my-5">Sign In</button>
             </div >
         </div >
