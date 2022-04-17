@@ -1,20 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import useServices from '../../Hooks/useServices/useServices';
+import Services from '../Home/Services/Services';
 
-const SetServices = ({ serv }) => {
-    const { id, image, title, description, price, person } = serv;
+const SetServices = () => {
+
+    const [services] = useServices([]);
+
 
     return (
-        <div>
-            <div className=" border-solid border-4 border-light-blue-500 mx-4 my-4 ">
-                <div >
-                    <img src={image} alt="" />
-                    <h2 className="font-bold text-3xl text-center text-blue-600  my-2">{title}</h2>
-                    <p className="text-justify pl-5 pr-2 font-normal">{description} </p>
-                    <h5 className="font-bold text-red-700 text-center text-2xl ">Trainer: {person}</h5>
-                    <h5 className="font-semibold text-center text-xl">Price: {price}$</h5>
-                    <Link to={`/getservice/${id}`}><button className="bg-blue-700 text-white rounded-lg mt-3 ml-20 lg:ml-44   p-3 mb-3">Get This Service</button></Link>
-                </div>
+        <div className="lg:ml-10 mb-10">
+
+
+            <div className="grid lg:grid-cols-3">
+                {
+                    services.map(service => <Services
+                        key={service.id}
+                        service={service}
+                    ></Services>)
+                }
             </div>
         </div>
     );

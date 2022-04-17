@@ -14,7 +14,7 @@ const Home = () => {
                 <h2 className="text-4xl pt-3 lg:ml-60 ml-10 text-red-800">Always Smile With Us</h2>
                 <h1 className="text-4xl pt-32 pb-3 ml-10">Our Smile <br /> Speaks Themeselvs</h1>
                 <p className="text-2xl ml-10">Tooth whitening can make your teeth <br /> sparkling white and beautiful!</p>
-                <Link to="/doctors"> <button className="bg-yellow-700 text-white rounded-lg mt-20 lg:ml-44 ml-10  p-3 mb-3">Click To See Our Doctors</button></Link>
+                <Link to="/about"> <button className="bg-yellow-700 text-white rounded-lg mt-20 lg:ml-44 ml-10  p-3 mb-3">Click To See My Profile</button></Link>
             </div>
 
             <div className="grid lg:grid-cols-3">
@@ -26,7 +26,7 @@ const Home = () => {
                 }
             </div>
             <div >
-                <Link to="/services"><button className="bg-gray-500 text-white rounded-lg mt-3 ml-5  p-3 mb-3 items-center">Show More Service</button></Link>
+                <Link to="/setservices"><button className="bg-gray-500 text-white rounded-lg mt-3 ml-5  p-3 mb-3 items-center">Show More Service</button></Link>
             </div>
 
 

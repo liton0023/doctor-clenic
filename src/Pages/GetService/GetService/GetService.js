@@ -5,20 +5,21 @@ import { useEffect } from 'react';
 
 
 const GetService = () => {
-    const { serviceId } = useParams();
     const [serviceDetails, setServiceDetails] = useState([]);
     const [singleService, setSingleService] = useState({});
 
     useEffect(() => {
-        fetch('https://mocki.io/v1/2aacb058-17a1-4f23-8e10-81a310356e65')
+        fetch('servicedetails.json')
             .then(res => res.json())
-            .then(data => setServiceDetails(data.service))
+            .then(data => setServiceDetails(data))
     }, [])
 
     useEffect(() => {
-        const foundService = serviceDetails.find(service => service.id === serviceId)
+        const foundService = serviceDetails.find(service => service.id === service)
         setSingleService(foundService)
     }, [serviceDetails])
+
+    console.log(singleService)
 
 
     return (

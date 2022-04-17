@@ -13,7 +13,7 @@ const Header = () => {
                 </Link>
                 <div className="mb-10 text-center pb-7">
                     <Link className="mx-10 lg:inline block" to="/home">Home</Link>
-                    <Link className="mx-10 lg:inline block" to="/services">Services</Link>
+                    <Link className="mx-10 lg:inline block" to="/setservices">Services</Link>
                     <Link className="mx-10 lg:inline block" to="/blogs">Blogs</Link>
                     <Link className="mx-10 lg:inline block" to="/shop">Drug Shop</Link>
                     <Link className="mx-10 lg:inline block" to="/about">About</Link>
