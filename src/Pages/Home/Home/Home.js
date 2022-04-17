@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import useServices from '../../../Hooks/useServices/useServices';
-import Services from '../Services/Services';
 import logo from '../../../images/before-after-box.jpg'
 import './Home.css'
+import useServices from '../../../Hooks/useServices/useServices';
+import Services from '../Services/Services';
 
 
 const Home = () => {

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Services = ({ service }) => {
     const { id, image, title, description, price, person } = service;
+
     return (
         <div>
             <div className=" border-solid border-4 border-light-blue-500 mx-4 my-4 ">
@@ -15,7 +16,8 @@ const Services = ({ service }) => {
                     <Link to={`/getservice/${id}`}><button className="bg-blue-700 text-white rounded-lg mt-3 lg:ml-44 ml-20  p-3 mb-3">Get This Service</button></Link>
                 </div>
             </div>
-        </div>
+        </div >
+
     );
 };
 
