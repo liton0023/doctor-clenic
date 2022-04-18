@@ -13,14 +13,14 @@ const Footer = () => {
                     <p>PhD From Univercity of Oxfored</p>
                 </div>
                 <div className=" pt-5 font-semibold">
-                    <Link to="/about"><p className="text-2xl pb-3">About Clinic</p></Link>
-                    <p> Our Clinic</p>
+                    <Link to="/about"><p className="text-2xl pb-3">About My Chember</p></Link>
+                    <p> My Chember</p>
                     <p>Photo Gallery</p>
                     <p>Career</p>
                     <p> Testimonials</p>
                 </div>
                 <div className=" pt-5 font-semibold">
-                    <Link to="/services"><p className="text-2xl pb-3">Our Services</p></Link>
+                    <Link to="/services"><p className="text-2xl pb-3">My Services</p></Link>
                     <p>Teeth Whitening</p>
                     <p>Gum Treatment</p>
                     <p>Sleep Apnea</p>
