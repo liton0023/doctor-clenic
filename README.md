@@ -1,6 +1,6 @@
 # Dental Chember Website
 ## ## Name 
- [`Visit my Website`](https://rs-dental.firebaseapp.com/)
+ [`Visit my Website`](https://rs-dental.web.app/home)
 ## authentication (email/password,Google sign in)
 ## useing Reset password with email,email verifaction, RequerAuth(Get the service,drags shop)
 ## create pages(home,blogs,service,get services,about conctact us, log in)
